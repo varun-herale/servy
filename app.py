@@ -11,33 +11,36 @@ info_log = logging.getLogger('req')
 info_log.setLevel(logging.INFO)
 
 handler = logging.handlers.RotatingFileHandler(
-    LOG_FILENAME,
-    maxBytes=1024 * 1024 * 100,
-    backupCount=20
-    )
+  LOG_FILENAME,
+  maxBytes=1024 * 1024 * 100,
+  backupCount=20
+  )
 
 info_log.addHandler(handler)
 
 @app.route('/')
 def hello_world():
-    info_log.info('\t'.join([
-            datetime.datetime.today().ctime(),
-            request.remote_addr,
-            request.method,
-            request.url,
-            request.data]))
-    return render_template('index.html')
+  info_log.info('\t'.join([
+    datetime.datetime.today().ctime(),
+    request.remote_addr,
+    request.method,
+    request.url,
+    request.data]))
+  return render_template('index.html')
+  
+@app.route('favicon.ico')
+def do_nothing():
+  return
   
 @app.route('/<path:url>')
 def new_path(url):
-    #info_log.info('\t'.join([request.remote_addr,request.url]))
-    info_log.info('\t'.join([
-            datetime.datetime.today().ctime(),
-            request.remote_addr,
-            request.method,
-            request.url,
-            request.data]))
-    return render_template(url)
+  info_log.info('\t'.join([
+    datetime.datetime.today().ctime(),
+    request.remote_addr,
+    request.method,
+    request.url,
+    request.data]))
+  return render_template(url)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+  app.run(debug=True)
