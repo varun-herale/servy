@@ -12,7 +12,7 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Thu Dec 20 01:36:43 2012'
+S'Fri Dec 21 08:15:04 2012'
 p7
 sb.(i__main__
 REQUEST
@@ -28,7 +28,7 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Thu Dec 20 01:36:44 2012'
+S'Fri Dec 21 08:15:06 2012'
 p7
 sb.(i__main__
 REQUEST
@@ -44,7 +44,7 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Fri Dec 21 00:36:44 2012'
+S'Fri Dec 21 09:15:08 2012'
 p7
 sb.(i__main__
 REQUEST
@@ -60,7 +60,7 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Fri Dec 21 00:42:06 2012'
+S'Fri Dec 21 09:16:13 2012'
 p7
 sb.(i__main__
 REQUEST
@@ -76,7 +76,7 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Fri Dec 21 00:42:06 2012'
+S'Fri Dec 21 09:16:14 2012'
 p7
 sb.(i__main__
 REQUEST
@@ -84,7 +84,7 @@ p0
 (dp1
 S'url'
 p2
-S'http://127.0.0.1:5000/page4.html'
+S'http://127.0.0.1:5000/page8.html'
 p3
 sS'host'
 p4
@@ -92,39 +92,7 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Fri Dec 21 01:42:07 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/index.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 01:42:08 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/top2.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 01:52:08 2012'
+S'Fri Dec 21 10:16:16 2012'
 p7
 sb.(i__main__
 REQUEST
@@ -140,7 +108,87 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Fri Dec 21 01:52:09 2012'
+S'Fri Dec 21 10:16:18 2012'
+p7
+sb.(i__main__
+REQUEST
+p0
+(dp1
+S'url'
+p2
+S'http://127.0.0.1:5000/top1.html'
+p3
+sS'host'
+p4
+S'127.0.0.1'
+p5
+sS'dt'
+p6
+S'Fri Dec 21 10:16:19 2012'
+p7
+sb.(i__main__
+REQUEST
+p0
+(dp1
+S'url'
+p2
+S'http://127.0.0.1:5000/page0.html'
+p3
+sS'host'
+p4
+S'127.0.0.1'
+p5
+sS'dt'
+p6
+S'Fri Dec 21 10:16:21 2012'
+p7
+sb.(i__main__
+REQUEST
+p0
+(dp1
+S'url'
+p2
+S'http://127.0.0.1:5000/top1.html'
+p3
+sS'host'
+p4
+S'127.0.0.1'
+p5
+sS'dt'
+p6
+S'Fri Dec 21 10:16:24 2012'
+p7
+sb.(i__main__
+REQUEST
+p0
+(dp1
+S'url'
+p2
+S'http://127.0.0.1:5000/page8.html'
+p3
+sS'host'
+p4
+S'127.0.0.1'
+p5
+sS'dt'
+p6
+S'Fri Dec 21 10:16:25 2012'
+p7
+sb.(i__main__
+REQUEST
+p0
+(dp1
+S'url'
+p2
+S'http://127.0.0.1:5000/index.html'
+p3
+sS'host'
+p4
+S'127.0.0.1'
+p5
+sS'dt'
+p6
+S'Fri Dec 21 10:16:27 2012'
 p7
 sb.(i__main__
 REQUEST
@@ -156,7 +204,7 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Fri Dec 21 01:52:10 2012'
+S'Fri Dec 21 10:16:29 2012'
 p7
 sb.(i__main__
 REQUEST
@@ -164,7 +212,7 @@ p0
 (dp1
 S'url'
 p2
-S'http://127.0.0.1:5000/page7.html'
+S'http://127.0.0.1:5000/page6.html'
 p3
 sS'host'
 p4
@@ -172,55 +220,7 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Fri Dec 21 01:52:11 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/index.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 01:54:19 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/top1.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 01:54:20 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/page8.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 01:54:21 2012'
+S'Fri Dec 21 10:16:31 2012'
 p7
 sb.(i__main__
 REQUEST
@@ -236,118 +236,6 @@ S'127.0.0.1'
 p5
 sS'dt'
 p6
-S'Fri Dec 21 01:54:23 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/top3.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 01:54:24 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/page5.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 01:54:24 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/top3.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 02:02:22 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/page9.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 02:02:23 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/index.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 02:02:24 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/top1.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 02:15:25 2012'
-p7
-sb.(i__main__
-REQUEST
-p0
-(dp1
-S'url'
-p2
-S'http://127.0.0.1:5000/page8.html'
-p3
-sS'host'
-p4
-S'127.0.0.1'
-p5
-sS'dt'
-p6
-S'Fri Dec 21 02:33:26 2012'
+S'Fri Dec 21 10:16:38 2012'
 p7
 sb.

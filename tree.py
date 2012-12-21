@@ -80,21 +80,15 @@ def insert_to_tree(temp_node, req):
     temp_node.add_child(new_node)
   return temp_node
 
-def add_to_main(temp_node, main_node, bflag):
+def add_to_main(temp_node, main_node):
   for c in temp_node.children:
     flag = 0
     for d in main_node.children:
-      print "d.url"
-      print d.url
-      print "c.url"
-      print c.url
-      print "outside if"
       if d.url == c.url:
 	d.data = d.data + c.data
-	print "I am inside if."
-	d = add_to_main(c, d, 1)
+	d = add_to_main(c, d)
 	flag = 1
-    if (flag == 0) or (bflag == 1):
+    if flag == 0:
       main_node.add_child(c)
   return main_node
 
@@ -121,7 +115,8 @@ def add_to_tree(current_host, time_now, time_prev):
       else:
 	temp_time = datetime.strptime(req.dt, fmt)
 	if (temp_time - time_prev) > time_difference:
-	  main_node = add_to_main(temp_node, main_node, 0)
+	  main_node = add_to_main(temp_node, main_node)
+	  pickle.dump(req, o)
 	  while True:
 	    try:
 	      req = pickle.load(i)
@@ -158,9 +153,9 @@ def make_tree():
     try:
       req = pickle.load(i)
     except EOFError:
-      #make_tree()
+      i.close()
       disp_lay(main_node)
-      return None
+      make_tree()
     else:
       if req.host in unfinished_sessions:
 	break
@@ -169,7 +164,6 @@ def make_tree():
 	add_to_tree(req.host, time_now, time_prev)
       else:
 	unfinished_sessions.append(req.host);
-	print unfinished_sessions
 
 if __name__ == '__main__':
   make_tree()
