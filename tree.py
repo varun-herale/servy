@@ -32,6 +32,10 @@ class Node(object):
 main_node = Node('base', 0)
 
 def make_unfinished():
+  try:
+	with open('log.txt') as f: pass
+  except IOError as e:
+    return 0
   os.rename('log.txt','temp_log.txt')
   i = open('temp_log.txt', 'r')
   o = open('unfinished_sessions.txt', 'a')
@@ -45,6 +49,7 @@ def make_unfinished():
       pickle.dump(req,o)
   i.close()
   o.close()
+  return 1
 
 def is_finished(current_host, time_now, time_prev, i):
   global fmt
@@ -144,7 +149,8 @@ def disp_lay(main_node):
 def make_tree():
   global fmt
   global main_node
-  make_unfinished()
+  if make_unfinished() == 0:
+    make_tree()
   unfinished_sessions = []
   time_now = datetime.strptime(datetime.today().ctime(), fmt)
   i = open('unfinished_sessions.txt', 'r')
@@ -153,17 +159,20 @@ def make_tree():
     try:
       req = pickle.load(i)
     except EOFError:
-      i.close()
-      disp_lay(main_node)
-      make_tree()
+	  i.close()
+	  disp_lay(main_node)
+	  return None
+	  #make_tree()
     else:
       if req.host in unfinished_sessions:
 	break
       time_prev = datetime.strptime(req.dt, fmt)
       if is_finished(req.host, time_now, time_prev, i) == 1:
-	add_to_tree(req.host, time_now, time_prev)
+		i.close()
+		add_to_tree(req.host, time_now, time_prev)
+		i = open('unfinished_sessions.txt')
       else:
-	unfinished_sessions.append(req.host);
+		unfinished_sessions.append(req.host);
 
 if __name__ == '__main__':
   make_tree()
