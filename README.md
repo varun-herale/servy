@@ -1,19 +1,17 @@
-servy
-=====
+#servy
 
-Standard PPM Model.
---------------------------
+##Standard PPM Model
 
-Required packages -
+###Required packages -
 
   flask
   
 --------------------------
 
-Usage -
+###Usage -
 
-  Run app.py to start the server.
-  Run tree.py to create tree from the log.
-  Run test.py to view the tree.
+  * Run app.py to start the server.
+  * Run tree.py to create tree from the log.
+  * Run test.py to view the tree.
 
 --------------------------
